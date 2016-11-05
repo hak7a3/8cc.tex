@@ -14,5 +14,5 @@ printf \\000 | cat sample/hello.c - | od -A n -t d1 -w1 -v | tex 8cc.tex # compi
 echo 0 | cat 8cc.tex.elvm.out - | tex elc.tex
 cat elc.tex.elvm.out | xargs printf "%03o\n" | xargs -I_ printf \\_ > hello.tex # compile ELVM IR to TeX source.
 tex hello.tex # execute
-cat hello.tex.elvm.out | xargs printf "%03o\n" | xargs -I_ printf # show stdout
+cat hello.tex.elvm.out | xargs printf "%03o\n" | xargs -I_ printf \\_ # show stdout
 ```
