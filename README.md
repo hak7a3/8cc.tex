@@ -3,8 +3,6 @@
 This is a TeX source of [8cc](https://github.com/rui314/8cc) built on [ELVM](https://github.com/shinh/elvm).
 In other words, this is a complete C compiler written in TeX.
 
-This is very influenced by [8cc.vim](https://github.com/rhysd/8cc.vim).
-
 # Usage
 
 
